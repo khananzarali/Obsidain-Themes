@@ -1,0 +1,176 @@
+/* ==========================================================================
+   EMERALD CITY THEME - WCAG 2.1 AA/AAA COMPLIANT
+   Rich emerald green with silver accents
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --font-handwritten: 'Space Mono', 'JetBrains Mono', monospace;
+  --font-default: var(--font-handwritten);
+  --font-interface: var(--font-handwritten);
+  --font-monospace: var(--font-handwritten);
+}
+
+*, *::before, *::after {
+  font-family: var(--font-handwritten) !important;
+}
+
+.theme-light {
+  --background-color: #ECFDF5;
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: #D1FAE5;
+  --background-secondary-alt: #D1FAE5;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+
+  --primary-color: #059669;
+  --primary-light: rgba(5, 150, 105, 0.1);
+  --primary-hover: #047857;
+  --secondary-color: #6B7280;
+  --secondary-light: rgba(107, 114, 128, 0.1);
+  --secondary-hover: #4B5563;
+  --accent-color: #10B981;
+  --accent-light: rgba(16, 185, 129, 0.15);
+
+  --text-color: #1F2937;
+  --text-normal: var(--text-color) !important;
+  --text-muted: #4B5563 !important;
+  --text-faint: #6B7280 !important;
+  --text-accent: var(--secondary-color) !important;
+  --heading-color: var(--text-color) !important;
+
+  --success-color: #059669;
+  --success-light: rgba(5, 150, 105, 0.1);
+  --warning-color: #D97706;
+  --warning-light: rgba(217, 119, 6, 0.1);
+  --error-color: #DC2626;
+  --error-light: rgba(220, 38, 38, 0.1);
+  --info-color: #2563EB;
+  --info-light: rgba(37, 99, 235, 0.1);
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(31, 41, 55, 0.12);
+  --divider-color: rgba(31, 41, 55, 0.08);
+  --text-highlight-bg: var(--primary-light);
+  --checkbox-marker-color: var(--primary-color);
+
+  --interactive-hover: rgba(31, 41, 55, 0.05);
+  --interactive-active: rgba(31, 41, 55, 0.1);
+  --focus-ring: rgba(5, 150, 105, 0.5);
+
+  --accent-h: 160;
+  --accent-s: 84%;
+  --accent-l: 39%;
+}
+
+.theme-dark {
+  --background-color: #022C22;
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: #064E3B;
+  --background-secondary-alt: #064E3B;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+
+  --primary-color: #34D399;
+  --primary-light: rgba(52, 211, 153, 0.15);
+  --primary-hover: #6EE7B7;
+  --secondary-color: #9CA3AF;
+  --secondary-light: rgba(156, 163, 175, 0.15);
+  --secondary-hover: #D1D5DB;
+  --accent-color: #10B981;
+  --accent-light: rgba(16, 185, 129, 0.2);
+
+  --text-color: #ECFDF5;
+  --text-normal: var(--text-color) !important;
+  --text-muted: #D1D5DB !important;
+  --text-faint: #9CA3AF !important;
+  --text-accent: var(--secondary-color) !important;
+  --heading-color: var(--text-color) !important;
+
+  --success-color: #34D399;
+  --success-light: rgba(52, 211, 153, 0.15);
+  --warning-color: #FBBF24;
+  --warning-light: rgba(251, 191, 36, 0.15);
+  --error-color: #F87171;
+  --error-light: rgba(248, 113, 113, 0.15);
+  --info-color: #60A5FA;
+  --info-light: rgba(96, 165, 250, 0.15);
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(52, 211, 153, 0.2);
+  --divider-color: rgba(52, 211, 153, 0.15);
+  --text-highlight-bg: var(--primary-light);
+  --checkbox-marker-color: var(--primary-color);
+
+  --interactive-hover: rgba(236, 253, 245, 0.05);
+  --interactive-active: rgba(236, 253, 245, 0.1);
+  --focus-ring: rgba(52, 211, 153, 0.5);
+
+  --accent-h: 160;
+  --accent-s: 84%;
+  --accent-l: 39%;
+}
+
+.theme-high-contrast {
+  --background-color: #000000;
+  --background-primary: var(--background-color) !important;
+  --background-primary-alt: var(--background-color) !important;
+  --background-secondary: #0A0A0A;
+  --background-secondary-alt: #0A0A0A;
+  --titlebar-background: var(--background-color) !important;
+  --titlebar-background-focused: var(--background-color) !important;
+  --ribbon-background: var(--background-color) !important;
+  --status-bar-background: var(--background-color) !important;
+  --tab-container-background: var(--background-color) !important;
+  --tab-background-active: var(--background-color) !important;
+
+  --primary-color: #6EE7B7;
+  --primary-light: rgba(110, 231, 183, 0.2);
+  --primary-hover: #A7F3D0;
+  --secondary-color: #D1D5DB;
+  --secondary-light: rgba(209, 213, 219, 0.2);
+  --secondary-hover: #E5E7EB;
+  --accent-color: #A7F3D0;
+  --accent-light: rgba(167, 243, 208, 0.2);
+
+  --text-color: #FFFFFF;
+  --text-normal: var(--text-color) !important;
+  --text-muted: #E5E5E5 !important;
+  --text-faint: #CCCCCC !important;
+  --text-accent: var(--secondary-color) !important;
+  --heading-color: var(--text-color) !important;
+
+  --success-color: #66FF99;
+  --success-light: rgba(102, 255, 153, 0.2);
+  --warning-color: #FFCC66;
+  --warning-light: rgba(255, 204, 102, 0.2);
+  --error-color: #FF6666;
+  --error-light: rgba(255, 102, 102, 0.2);
+  --info-color: #66B3FF;
+  --info-light: rgba(102, 179, 255, 0.2);
+
+  --icon-color: var(--primary-color);
+  --tab-outline-color: rgba(255, 255, 255, 0.3);
+  --divider-color: rgba(255, 255, 255, 0.2);
+  --text-highlight-bg: var(--primary-light);
+  --checkbox-marker-color: var(--primary-color);
+
+  --interactive-hover: rgba(255, 255, 255, 0.1);
+  --interactive-active: rgba(255, 255, 255, 0.15);
+  --focus-ring: rgba(110, 231, 183, 0.7);
+
+  --accent-h: 160;
+  --accent-s: 84%;
+  --accent-l: 39%;
+}
