@@ -1,0 +1,7 @@
+.cm-line {
+  border-left: 2px solid transparent !important;
+}
+.cm-active {
+  border-color: #a882ff !important;
+  background-color: transparent !important; 
+}

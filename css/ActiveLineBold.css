@@ -1,0 +1,4 @@
+.cm-active,
+.cm-active * {
+  font-weight: bold !important;
+}
